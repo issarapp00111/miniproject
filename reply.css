@@ -1,0 +1,178 @@
+body {
+    background-color: #dcd6d6;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(img/1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+main {
+    width: 800px;
+    height: auto;
+    margin: 10px auto 20px ; /* จาก 40px ที่เดิมเป็น 0 บน */
+    color: #040404;
+    position: relative;
+    max-width: 900px;
+    overflow: auto; /* เพิ่มการเลื่อนกรอบหากมีเนื้อหาเพิ่มขึ้น */
+    padding: 10px 100px; /* เพิ่ม padding เพื่อลดความสูง */
+    border-radius: 5px;
+    background-color: rgba(247, 247, 247, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.post {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.reply {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.replies {
+    display: flex;
+    flex-direction: column-reverse; /* ให้รายการตอบกลับเริ่มจากบนไปล่าง */
+    gap: 10px; /* ระยะห่างระหว่างคำตอบกลับ */
+    
+}
+
+.replies .reply {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #f9e2e2;
+    border-radius: 5px;
+    list-style: none;
+    margin-left: 150px;
+    margin-top: 27px;
+    font-size: 20px;
+    width: 80%;
+}
+
+.replies .reply p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f3e5e5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+textarea {
+    width: 80%;
+    padding: 15px;
+    border: 1px solid #c85858;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #c13f4e;
+}
+
+/* ปรับการแสดงเนื้อหาหลัก */
+.content {
+    margin-left: 270px; /* กำหนดระยะห่างด้านซ้ายของเนื้อหาหลัก */
+    padding: 20px; /* ระยะห่างของเนื้อหาหลัก */
+}
+#logoutBtn {
+    background-color: #e05252;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#logoutBtn:hover {
+    background-color: #c13f4e;
+}
+.navbar{
+    width: 1200px;
+    height: 70px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #94f54a;
+    font-size: 45px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 25px
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 40px;
+    margin-top: 27px;
+    font-size: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #94f54a;
+}
+
+.reply-li{
+
+}
